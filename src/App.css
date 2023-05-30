@@ -1,24 +1,156 @@
 .App {
   display: grid;
-  grid-template-columns: 55%;
   justify-content: center;
+  padding-top: 100px;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+canvas {
+  background: rgb(236, 236, 236);
+  border-radius: 15px;
+  height: 515px;
+  margin: 20px 20px;
+  padding: 30px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 500px 500px;
+  grid-gap: 90px;
 }
 
 .product {
-  border: 1px solid red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form {
-  border: 1px solid blue;
-  display: flex
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-input,
-label {
+select {
   display: block;
+  font-size: 15px;
+}
+
+#encryption-box {
+  box-sizing: border-box;
+  width: 166px;
+  height: 40px;
+  left: 982px;
+  top: 519px;
+
+  background: #FFFFFF;
+  border: 1px solid #606060;
+  border-radius: 10px;
+}
+
+input {
+  /* Rectangle 2 */
+  box-sizing: border-box;
+  width: 490px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #606060;
+  border-radius: 10px;
+}
+
+label {
+  padding-top: 20px;
+}
+
+#password {
+  display: grid;
+  grid-template-columns: 170px 200px;
+  grid-gap: 40px;
+}
+
+#password-box {
+  /* Rectangle 3 */
+  box-sizing: border-box;
+  width: 282px;
+  height: 40px;
+  left: 1190px;
+  top: 513px;
+
+  background: #FFFFFF;
+  border: 1px solid #606060;
+  border-radius: 10px;
+}
+
+button {
+  /* Rectangle 5 */
+  box-sizing: border-box;
+  padding: 10px 20px;
+
+  background: #FFFFFF;
+  border: 1px solid #606060;
+  border-radius: 10px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  /*font-weight: 600;*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.circle-picker{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button:hover {
+  transition-duration: 0.4s;
+  background-color: #e7e7e7;
+}
+
+@media (max-width: 1050px) {
+  .App {
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .product {
+    text-align: center;
+  }
+
+  canvas {
+    background: rgb(236, 236, 236);
+    border-radius: 15px;
+    height: 515px;
+    margin: 20px 20px;
+    padding: 30px;
+  }
+
+  .form {
+    display: block;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  #name input {
+    margin-left: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+  
+  #download-button {
+    margin-bottom: 20px;
+  }
 }
